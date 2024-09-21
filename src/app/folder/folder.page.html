@@ -3,19 +3,27 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
+    <ion-title>Меню </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+Так выглядит первая кнопка
+<ion-list-header>После нажатия кнопки и вставки текста будет изменение:</ion-list-header> 
+  <ion-list [inset]="true">
+    <ion-item>
+      <ion-input [(ngModel)]="val1" label="Вставьте текст1"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="val2"  label="Вставьте текст2"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="btnClick()" shape ="round">Тык</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{val}}</ion-label>
+    </ion-item>
+  </ion-list>
+  
 </ion-content>
+
