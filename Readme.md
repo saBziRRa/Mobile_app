@@ -1,9 +1,9 @@
 # Ionic aplication
- markdown разметка.
+markdown разметка.
 ```
 ionic start 
+git clone 
 npm install
-git clone
 ionic serve
 ```
 * Методы: интерпаляция переменных {{}}(двойные фигурные)

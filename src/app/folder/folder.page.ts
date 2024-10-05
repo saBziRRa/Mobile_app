@@ -15,6 +15,7 @@ export class FolderPage implements OnInit {
   val2:string = "?"
   btnClick(){
 this.val=this.val1
+this.val1=this.val2
   }
   ngOnInit() {
     this.folder = this.activatedRoute.snapshot.paramMap.get('id') as string;
