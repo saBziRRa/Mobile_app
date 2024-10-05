@@ -14,15 +14,26 @@
       <ion-input [(ngModel)]="val1" label="Вставьте текст1"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input [(ngModel)]="val2"  label="Вставьте текст2"></ion-input>
+      <ion-input [(ngModel)]="input_Name"  label="Вставьте текст2"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-button (click)="btnClick()" shape ="round">Тык</ion-button>
-      <ion-button (click)="btnClick2()" shape ="round">Перенести из второго в первый</ion-button>
+      <ion-input [(ngModel)]="input_Autor"  label="Вставьте текст3"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="btnClick()" shape ="round">Перенос из первого текста вниз</ion-button>
+      <ion-button (click)="btnClick2()" shape ="round">Кнопка2</ion-button>
     </ion-item>
     <ion-item>
       <ion-label>{{val}}</ion-label>
     </ion-item>
-  </ion-list>  
+  </ion-list>
+  <ion-grid>
+    <ion-item *ngFor="let game of games" lines="none">
+      <ion-row>
+        <ion-col>{{game.Game_name}}</ion-col>
+        <ion-col>{{game.Game_autor}}</ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-grid>  
 </ion-content>
 
