@@ -15,6 +15,8 @@ export class FolderPage implements OnInit {
   val2:string = "?"
   btnClick(){
 this.val=this.val1
+  }
+  btnClick2(){
 this.val1=this.val2
   }
   ngOnInit() {
